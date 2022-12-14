@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title></title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <a href="/" class="header__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="header__block">
+                    <a href="tel:+7 (383) 325 32 32" class="header__phone">+7 (383) 325 32 32</a>
+                </div>
+                <div class="header__block">
+                    <p class="header__address">г. Новосибирск, ул. Тюменская, д. 8, офис 3</p>
+                </div>
+                <div class="header__block">
+                    <a href="mailto:info@nku-nsk.ru" class="header__email">info@nku-nsk.ru</a>
+                </div>
+                <div class="header__block">
+                    <div class="header__soc">
+                        <a href="#" class="item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                <path d="M4.99036 15.6693L5.67816 16.0711C6.83805 16.7476 8.15727 17.1027 9.50001 17.1C11.0031 17.1 12.4725 16.6543 13.7223 15.8192C14.9721 14.9841 15.9463 13.7971 16.5215 12.4084C17.0967 11.0197 17.2472 9.49156 16.954 8.01731C16.6607 6.54305 15.9369 5.18886 14.874 4.12599C13.8111 3.06311 12.4569 2.33928 10.9827 2.04603C9.50844 1.75278 7.98033 1.90329 6.59161 2.47851C5.2029 3.05374 4.01594 4.02785 3.18084 5.27766C2.34574 6.52748 1.90001 7.99686 1.90001 9.49999C1.90001 10.8642 2.25816 12.1723 2.92981 13.3228L3.33071 14.0106L2.71036 16.2915L4.99036 15.6693ZM0.00381271 19L1.28821 14.2804C0.441893 12.8296 -0.0027461 11.1796 1.27606e-05 9.49999C1.27606e-05 4.25315 4.25316 0 9.50001 0C14.7469 0 19 4.25315 19 9.49999C19 14.7468 14.7469 19 9.50001 19C7.82115 19.0027 6.17183 18.5584 4.72151 17.7127L0.00381271 19ZM6.07146 5.0426C6.19876 5.0331 6.32701 5.0331 6.45431 5.0388C6.50561 5.0426 6.55691 5.0483 6.60821 5.054C6.75926 5.0711 6.92551 5.16325 6.98156 5.29055C7.26466 5.93275 7.54016 6.5797 7.80616 7.22855C7.86506 7.37295 7.82991 7.5582 7.71781 7.7387C7.64071 7.86075 7.55732 7.97871 7.46796 8.09209C7.36061 8.22984 7.12976 8.48254 7.12976 8.48254C7.12976 8.48254 7.03571 8.59464 7.07181 8.73429C7.08511 8.78749 7.12881 8.86444 7.16871 8.92904L7.22476 9.01929C7.46796 9.42494 7.79476 9.83629 8.19376 10.2239C8.30776 10.3341 8.41891 10.4471 8.53861 10.5526C8.98321 10.9449 9.48671 11.2651 10.0301 11.5026L10.0349 11.5045C10.1156 11.5396 10.1565 11.5586 10.2743 11.609C10.3332 11.6337 10.394 11.6555 10.4557 11.6717C10.5195 11.6879 10.5867 11.6849 10.6488 11.6629C10.7109 11.6409 10.765 11.601 10.8044 11.5482C11.4922 10.715 11.5549 10.6609 11.5606 10.6609V10.6628C11.6083 10.6182 11.6651 10.5844 11.727 10.5636C11.789 10.5428 11.8547 10.5355 11.9197 10.5421C11.9767 10.5459 12.0346 10.5564 12.0878 10.5801C12.5923 10.811 13.4178 11.171 13.4178 11.171L13.9707 11.419C14.0638 11.4636 14.1484 11.5691 14.1512 11.6707C14.155 11.7344 14.1607 11.837 14.1389 12.0251C14.1085 12.2711 14.0344 12.5666 13.9603 12.7214C13.9095 12.8271 13.8422 12.924 13.7608 13.0083C13.6649 13.109 13.5599 13.2006 13.4473 13.2819C13.4083 13.3113 13.3687 13.3398 13.3285 13.3674C13.2103 13.4424 13.0889 13.5121 12.9647 13.5764C12.7201 13.7064 12.4499 13.781 12.1733 13.7949C11.9976 13.8044 11.8218 13.8177 11.6451 13.8082C11.6375 13.8082 11.1055 13.7256 11.1055 13.7256C9.75485 13.3703 8.50573 12.7048 7.45751 11.7819C7.24281 11.5928 7.04426 11.3895 6.84096 11.1872C5.99546 10.3464 5.35706 9.43919 4.96946 8.58229C4.77107 8.16172 4.66391 7.70393 4.65501 7.239C4.65109 6.6622 4.83964 6.10058 5.19081 5.643C5.26016 5.5537 5.32571 5.4606 5.43876 5.35325C5.55941 5.23925 5.63541 5.17845 5.71806 5.13665C5.82795 5.08158 5.94783 5.04926 6.07051 5.04165L6.07146 5.0426Z" fill="#2B65A8"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="banner">
+            <div class="banner__wrap">
+                <div class="banner__block">
+                    <div class="banner__box">
+                        <div class="banner__content">
+                            <img src="img/banner-left.png" alt="" class="left">
+                            <div class="container">
+                                <div class="wrap">
+                                    <p class="banner__h1">Продажа</p>
+                                    <p class="banner__text">готового вводно-распределительное устройство оборудования</p>
+                                    <p class="banner__h1">Сборка</p>
+                                    <p class="banner__text">вводно-распределительное устройство по чертежам заказчика</p>
+                                    <button class="btn">Оставить заявку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner__img">
+                            <img src="img/banner.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__box">
+                    <div class="advantages__block">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                <path d="M45 0.757996H1V44.758H45V0.757996Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M30.8064 0.757996L23.2922 9.35762H17.3643" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M14.1916 12.4467C15.8977 12.4467 17.2808 11.0637 17.2808 9.35756C17.2808 7.65145 15.8977 6.26837 14.1916 6.26837C12.4855 6.26837 11.1024 7.65145 11.1024 9.35756C11.1024 11.0637 12.4855 12.4467 14.1916 12.4467Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M35.148 21.6308C36.8541 21.6308 38.2372 20.2477 38.2372 18.5416C38.2372 16.8355 36.8541 15.4525 35.148 15.4525C33.4419 15.4525 32.0588 16.8355 32.0588 18.5416C32.0588 20.2477 33.4419 21.6308 35.148 21.6308Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M16.6964 30.147C18.4025 30.147 19.7855 28.7639 19.7855 27.0578C19.7855 25.3517 18.4025 23.9686 16.6964 23.9686C14.9903 23.9686 13.6072 25.3517 13.6072 27.0578C13.6072 28.7639 14.9903 30.147 16.6964 30.147Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M26.131 38.4127C27.8371 38.4127 29.2201 37.0296 29.2201 35.3235C29.2201 33.6174 27.8371 32.2343 26.131 32.2343C24.4249 32.2343 23.0418 33.6174 23.0418 35.3235C23.0418 37.0296 24.4249 38.4127 26.131 38.4127Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M11.9374 11.4449L7.76281 15.6195H1" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M1 27.0578H13.6072" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M37.3188 0.757996L24.5446 15.4525V20.2115L19.3681 25.4715" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M35.148 21.6309V31.4828L39.5731 35.9914V44.758" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M23.0417 35.3234H14.4421L9.85009 39.9155H1" stroke="#2B65A8" stroke-miterlimit="10"/>
+                            </svg>
+                        </div>
+                        <p class="title">Учетем нюансы электрической схемы</p>
+                    </div>
+                    <div class="advantages__block">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="43" viewBox="0 0 46 43" fill="none">
+                                <path d="M11.9257 8.84165V4.32313C11.9257 2.39721 13.4865 0.767578 15.4932 0.767578H41.4324C43.3649 0.767578 45 2.32313 45 4.32313V20.6935C45 22.6194 43.4392 24.2491 41.4324 24.2491H39.6486V32.5454L34.223 27.0639" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M17.5743 32.4712H30.7297C32.5878 32.4712 34.1486 30.9157 34.1486 29.0638V12.6194C34.1486 10.7675 32.5878 9.21198 30.7297 9.21198H4.41892C2.56081 9.21198 1 10.7675 1 12.6194V29.1379C1 30.9898 2.56081 32.5453 4.41892 32.5453H10.0676V40.7675L17.5743 32.4712Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M7.91217 16.6194H17.5743" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M7.91217 21.212H27.8311" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M7.91217 25.7306H27.8311" stroke="#2B65A8" stroke-miterlimit="10"/>
+                            </svg>
+                        </div>
+                        <p class="title">Проконсультируем в выборе ВРУ</p>
+                    </div>
+                    <div class="advantages__block">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
+                                <path d="M37.7858 23.0593L49.9363 35.2859L40.3131 44.9694L28.1625 32.7428" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M18.1505 22.6681L6 10.4415L15.6232 0.757996L27.5793 12.789" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M17.4205 43.2427L50 10.4592L40.3774 0.776271L7.79785 33.5598M17.4205 43.2427L7.79785 33.5598M17.4205 43.2427L5.49999 44.9694L7.79785 33.5598" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M44.7845 15.1365L35.4529 5.74646" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M19.9002 5.06177L16.3036 8.68085" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M25.052 10.2458L22.2331 13.0824" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M40.4103 25.7003L36.8138 29.3194" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M45.5622 30.8844L42.7432 33.721" stroke="#2B65A8" stroke-miterlimit="10"/>
+                            </svg>
+                        </div>
+                        <p class="title">Изготовим нестандартный корпус ВРУ</p>
+                    </div>
+                    <div class="advantages__block">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45" fill="none">
+                                <path d="M1.16852 18.1635V37.9067C1.16852 41.0857 8.92331 43.7627 18.3639 43.7627C27.8045 43.7627 35.5593 41.0857 35.5593 37.9067V4.61096" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M18.3639 8.45926C27.8607 8.45926 35.5593 6.73634 35.5593 4.61101C35.5593 2.48568 27.8607 0.762756 18.3639 0.762756C8.86716 0.762756 1.16852 2.48568 1.16852 4.61101C1.16852 6.73634 8.86716 8.45926 18.3639 8.45926Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M1 4.61096V19.1674C1 20.6732 2.18008 21.8444 3.69732 21.8444C5.21456 21.8444 6.39464 20.6732 6.39464 19.1674V14.9845C6.39464 16.4903 7.57471 17.6616 9.09195 17.6616C10.6092 17.6616 12.1264 16.4903 12.1264 14.9845V8.2919" stroke="#2B65A8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.5326 18.1635C19.3705 18.1635 20.0498 17.4893 20.0498 16.6576C20.0498 15.826 19.3705 15.1518 18.5326 15.1518C17.6946 15.1518 17.0153 15.826 17.0153 16.6576C17.0153 17.4893 17.6946 18.1635 18.5326 18.1635Z" stroke="#2B65A8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M35.5594 10.1323C35.5594 10.1323 45 15.1518 45 21.8444C45 28.537 29.659 36.2335 18.7012 18.1635" stroke="#2B65A8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <p class="title">Подберем цвет порошковой окраски</p>
+                    </div>
+                    <div class="advantages__block">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 36 46" fill="none">
+                                <path d="M34.9363 0.757996H0.936279V44.758H34.9363V0.757996Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M31.2933 4.53638H4.70044V12.215H31.2933V4.53638Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M10.8935 15.5059H5.79346V20.625H10.8935V15.5059Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M20.4862 15.5059H15.3862V20.625H20.4862V15.5059Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M30.2006 15.5059H25.1006V20.625H30.2006V15.5059Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M10.8935 25.2566H5.79346V30.3757H10.8935V25.2566Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M20.4862 25.2566H15.3862V30.3757H20.4862V25.2566Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M10.8935 35.0073H5.79346V40.1264H10.8935V35.0073Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M20.4862 35.0073H15.3862V40.1264H20.4862V35.0073Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                <path d="M30.2006 25.3785H25.1006V40.1264H30.2006V25.3785Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                            </svg>
+                        </div>
+                        <p class="title">Выполним расчет на разных комплектующих</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main__wrap">
+            <div class="lines">
+                <span class="lines1"></span>
+                <span class="lines6"></span>
+                <div class="lines_container">
+                    <span class="lines2"></span>
+                    <span class="lines3"></span>
+                    <span class="lines4"></span>
+                    <span class="lines5"></span>
+                </div>
+            </div>
+            <section class="company">
+                <div class="container">
+                    <div class="title_h2">
+                        <p class="h2">О компании</p>
+                    </div>
+                    <div class="company__box">
+                        <div class="company__block">
+                            <span class="line1"></span>
+                            <p class="text">Компания Электрозавод –динамично развивающаяся, производственная
+                                компания, на рынке электротехнической продукции успешно работает
+                                с 2009г.
+                            </p>
+                        </div>
+                        <div class="company__block">
+                            <span class="line1"></span>
+                            <p class="text">Компания располагает собственным производственным цехом, в
+                                котором реализован полный цикл по изготовлению электрощитовой
+                                продукции. Цех оснащен современным высокопроизводительным
+                                оборудованием.                               
+                            </p>
+                        </div>
+                        <div class="company__block">
+                            <div class="img">
+                                <img src="img/company.png" alt="">
+                            </div>
+                        </div>
+                        <div class="company__block">
+                            <span class="line2"></span>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                                    <path d="M23.8385 10.8221C23.8385 16.2523 20.5644 20.6443 16.5717 20.6443C12.579 20.6443 9.38477 16.2523 9.38477 10.8221" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M16.6516 8.02717C17.8864 8.02717 18.8875 7.02611 18.8875 5.79123C18.8875 4.55636 17.8864 3.5553 16.6516 3.5553C15.4167 3.5553 14.4156 4.55636 14.4156 5.79123C14.4156 7.02611 15.4167 8.02717 16.6516 8.02717Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M8.66609 10.8222C8.58623 10.2632 8.50638 9.70418 8.50638 9.1452C8.50638 4.67333 12.1797 1 16.6516 1C21.1235 1 24.7968 4.67333 24.7968 9.1452C24.7968 9.70418 24.7169 10.2632 24.6371 10.8222" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M7.14883 10.902H25.8349" stroke="#2B65A8" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M12.6588 19.0472V22.7206L10.8222 24.5572C10.8222 24.5572 1 27.1126 1 30.3866C1 33.6607 1 36.8549 1 36.8549H23.5989" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M6.51001 25.9946V36.775" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M10.6624 24.5573V36.775" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M32.4628 38.0526C35.55 38.0526 38.0527 35.55 38.0527 32.4628C38.0527 29.3756 35.55 26.8729 32.4628 26.8729C29.3756 26.8729 26.873 29.3756 26.873 32.4628C26.873 35.55 29.3756 38.0526 32.4628 38.0526Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M44.9202 31.5844L42.1253 30.5462C41.8857 29.2686 41.4066 28.0707 40.6879 27.0326L41.9656 24.3176C41.5663 23.8384 41.0872 23.3593 40.608 22.96L37.893 24.2377C36.8549 23.519 35.657 23.0399 34.3794 22.8003L33.4211 20.0054C33.1017 20.0054 32.7823 19.9255 32.4628 19.9255C32.1434 19.9255 31.824 19.9255 31.5046 20.0054L30.5463 22.8003C29.2686 23.0399 28.0708 23.519 27.0327 24.2377L24.3176 22.96C23.8385 23.3593 23.3594 23.8384 22.9601 24.3176L24.2378 27.0326C23.5191 28.0707 23.04 29.2686 22.8004 30.5462L20.0055 31.5045C20.0055 31.8239 19.9256 32.1433 19.9256 32.4628C19.9256 32.7822 19.9256 33.1016 20.0055 33.421L22.8004 34.3793C23.04 35.6569 23.5191 36.8548 24.2378 37.8929L22.9601 40.608C23.3594 41.0871 23.8385 41.5662 24.3176 41.9655L27.0327 40.6878C28.0708 41.4065 29.2686 41.8856 30.5463 42.1252L31.5046 44.9201C31.824 44.9201 32.1434 45 32.4628 45C32.7823 45 33.1017 45 33.4211 44.9201L34.3794 42.1252C35.657 41.8856 36.8549 41.4065 37.893 40.6878L40.608 41.9655C41.0872 41.5662 41.5663 41.0871 41.9656 40.608L40.6879 37.8929C41.4066 36.8548 41.8857 35.6569 42.1253 34.3793L44.9202 33.421C44.9202 33.1016 45.0001 32.7822 45.0001 32.4628C44.9202 32.1433 44.9202 31.9038 44.9202 31.5844Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M20.6443 19.0472V22.4011L23.3594 25.1961" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M12.7387 22.7206L16.412 26.3939L20.5645 22.3213" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                </svg>
+                            </div>
+                            <p class="title">12 лет опыта</p>
+                            <p class="text2">Наши сотрудники - инженеры с опытом работы от 3-х до 20-ти лет</p>
+                        </div>
+                        <div class="company__block">
+                            <span class="line2"></span>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 36 46" fill="none">
+                                    <path d="M27.2664 3.69397H31.0984C33.2582 3.69397 35 5.42081 35 7.5621V41.1319C35 43.2732 33.2582 45 31.0984 45H4.90164C2.7418 45 1 43.2732 1 41.1319V7.5621C1 5.42081 2.7418 3.69397 4.90164 3.69397H8.66393" stroke="#2B65A8" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    <path d="M19.045 12.6735H29.7746" stroke="#2B65A8" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    <path d="M19.045 23.1726H29.7746" stroke="#2B65A8" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    <path d="M19.045 33.6028H29.7746" stroke="#2B65A8" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    <path d="M19.045 28.3531H24.5491" stroke="#2B65A8" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    <path d="M19.045 38.8524H24.5491" stroke="#2B65A8" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    <path d="M19.045 17.9231H24.5491" stroke="#2B65A8" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    <path d="M24.2705 6.38775H11.4508C9.91801 6.38775 8.73358 5.14442 8.73358 3.69387C8.73358 2.17425 9.98768 1 11.4508 1H24.2705C25.8033 1 26.9877 2.24333 26.9877 3.69387C26.9877 5.14442 25.8033 6.38775 24.2705 6.38775Z" stroke="#2B65A8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.6558 12.3281L8.66396 18.1994L5.45905 15.022" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M14.6558 22.4819L8.66396 28.3532L5.45905 25.1758" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M14.6558 32.6359L8.66396 38.5071L5.45905 35.3297" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                </svg>
+                            </div>
+                            <p class="title">Честный прайс</p>
+                            <p class="text2">Мы скажем, сколько будет стоить сборка вводно распределительного устройства</p>
+                        </div>
+                        <div class="company__block">
+                            <span class="line2"></span>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="36" viewBox="0 0 46 36" fill="none">
+                                    <path d="M22.6593 10.314C22.6593 15.4632 19.5543 19.628 15.7677 19.628C11.9811 19.628 8.95184 15.4632 8.95184 10.314" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M15.8434 7.66363C17.0145 7.66363 17.9639 6.71435 17.9639 5.54336C17.9639 4.37237 17.0145 3.4231 15.8434 3.4231C14.6723 3.4231 13.7229 4.37237 13.7229 5.54336C13.7229 6.71435 14.6723 7.66363 15.8434 7.66363Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M8.27024 10.314C8.19451 9.78396 8.11877 9.2539 8.11877 8.72383C8.11877 4.4833 11.6024 1 15.8434 1C20.0844 1 23.568 4.4833 23.568 8.72383C23.568 9.2539 23.4923 9.78396 23.4166 10.314" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M6.83136 10.3899H24.5525" stroke="#2B65A8" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M6.22552 24.7017V34.9244" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M10.1635 23.3386V34.9244" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M12.0568 18.1136V21.5969L10.315 23.3386C10.315 23.3386 1 25.7618 1 28.8664C1 31.8954 1 35.0001 1 35.0001H9.25474H22.432H30.6868C30.6868 35.0001 30.6868 31.9711 30.6868 28.8664C30.6868 25.8375 21.3718 23.3386 21.3718 23.3386L19.5542 21.5969V18.1136" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M25.3855 24.7017V34.9244" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M21.5233 23.3386V34.9244" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M12.1326 21.5969L15.6162 25.0802L19.5543 21.5969" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M39.5473 14.4789C39.5473 18.0379 37.4268 20.9154 34.7762 20.9154C32.1256 20.9154 30.0051 18.0379 30.0051 14.4789" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M34.8519 12.6616C35.6466 12.6616 36.2908 12.0174 36.2908 11.2228C36.2908 10.4282 35.6466 9.78406 34.8519 9.78406C34.0572 9.78406 33.413 10.4282 33.413 11.2228C33.413 12.0174 34.0572 12.6616 34.8519 12.6616Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M29.5508 14.4789C29.475 14.1003 29.475 13.7974 29.475 13.4187C29.475 10.4655 31.8984 8.04236 34.852 8.04236C37.8055 8.04236 40.2289 10.4655 40.2289 13.4187C40.2289 13.7974 40.2289 14.176 40.1532 14.4789" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M28.5662 14.5546H40.8347" stroke="#2B65A8" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M28.1876 24.4744V26.1393" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M30.9139 23.49V31.5167" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M30.2324 31.5167H39.3201H45C45 31.5167 45 29.3964 45 27.2762C45 25.1559 38.5628 23.49 38.5628 23.49L37.3511 22.2784V19.8552" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M32.2014 19.9309V22.3541L30.9896 23.5657C30.9896 23.5657 28.4148 24.2472 26.5215 25.2316" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M41.4406 24.4744V31.5167" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M38.7142 23.49V31.5167" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M32.2771 22.2783L34.7005 24.7015L37.3511 22.2783" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                </svg>
+                            </div>
+                            <p class="title">Опытные специалисты</p>
+                            <p class="text2">Наши специалисты соберут качественно и в срок</p>
+                        </div>
+                        <div class="company__block">
+                            <span class="line2"></span>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="46" viewBox="0 0 36 46" fill="none">
+                                    <path d="M34.8773 8.51532C26.2408 8.51532 21.1607 3.89051 19.1286 1.5781C18.3665 0.807299 17.3504 0.807299 16.8424 1.5781C14.5563 4.14744 9.47596 8.51532 1.09351 8.51532C1.09351 18.0219 -1.19258 37.5489 16.8424 44.4861L18.1125 45L19.3825 44.4861C37.4175 37.5489 34.8773 18.0219 34.8773 8.51532Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M10.52 21.4974L16.16 27.1997" stroke="#2B65A8" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M16.8665 27.8125L27.0665 17.4999" stroke="#2B65A8" stroke-miterlimit="10" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <p class="title">Контроль ОТК</p>
+                            <p class="text2">В нашей организации работает отдел контроля качества. Каждое изделие проходит контроль</p>
+                        </div>
+                        <div class="company__block">
+                            <span class="line2"></span>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="46" viewBox="0 0 33 46" fill="none">
+                                    <path d="M21.8026 3.46729C23.2303 1.92523 25.7796 3.36449 25.1678 5.42057C24.7599 6.96262 26.1875 8.29907 27.6151 7.88786C29.6546 7.27104 31.0822 9.84113 29.5526 11.2804C28.4309 12.4112 28.9408 14.2617 30.4704 14.6729C32.5099 15.1869 32.5099 18.0654 30.4704 18.5795C28.9408 18.9907 28.4309 20.9439 29.5526 21.972C31.0822 23.4112 29.6546 25.9813 27.6151 25.3645C26.0855 24.9533 24.7599 26.3926 25.1678 27.8318C25.7796 29.8879 23.2303 31.3271 21.8026 29.7851C20.6809 28.6542 18.8454 29.1683 18.4375 30.7103C17.9276 32.7664 15.0724 32.7664 14.5625 30.7103C14.1546 29.1683 12.2171 28.6542 11.1974 29.7851C9.76974 31.3271 7.22039 29.8879 7.83224 27.8318C8.24013 26.2898 6.8125 24.9533 5.38487 25.3645C3.3454 25.9813 1.91776 23.4112 3.44737 21.972C4.56908 20.9439 4.05921 19.0935 2.52961 18.6823C0.490132 18.1682 0.490132 15.2897 2.52961 14.7757C4.05921 14.3645 4.56908 12.4112 3.44737 11.3832C1.91776 9.84113 3.3454 7.37384 5.38487 7.88786C6.91447 8.29907 8.24013 6.85982 7.83224 5.42057C7.22039 3.36449 9.76974 1.92523 11.1974 3.46729C12.2171 4.59814 14.1546 4.08412 14.5625 2.54206C15.0724 0.485981 17.9276 0.485981 18.4375 2.54206C18.8454 4.08412 20.6809 4.59814 21.8026 3.46729Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M11.5032 16.9346L15.5822 21.0467L23.2302 13.3364" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M4.87505 32.3551L1.71387 40.6822L7.73031 40.1682L11.8093 45L15.0724 36.9813L4.87505 32.3551Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                    <path d="M28.2269 32.3551L31.4901 40.6822L25.4736 40.1682L21.3947 45L18.1315 36.9813L28.2269 32.3551Z" stroke="#2B65A8" stroke-miterlimit="10"/>
+                                </svg>
+                            </div>
+                            <p class="title">Гарантия от компании</p>
+                            <p class="text2">Мы предоставляем гарантию до 2 лет на комплектующие и до 6 месяцев на работу инженера</p>
+                        </div>
+                    </div>
+               </div>
+            </section>
+            <section class="products">
+                <div class="container">
+                    <div class="title_h2">
+                        <p class="h2">Наша продукция</p>
+                    </div>
+                    <div class="products__box">
+                        <a href="#" class="products__block">
+                            <div class="img">
+                                <img src="img/1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">Низковольтное оборудование</p>
+                            </div>
+                        </a>
+                        <a href="#" class="products__block">
+                            <div class="img">
+                                <img src="img/2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">Высоковольтное оборудование</p>
+                            </div>
+                        </a>
+                        <a href="#" class="products__block">
+                            <div class="img">
+                                <img src="img/3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">Оборудование для трансформаторных подстанций</p>
+                            </div>
+                        </a>
+                        <a href="#" class="products__block">
+                            <div class="img">
+                                <img src="img/4.png" alt="">
+                            </div>
+                            <div class="content">
+                                <p class="title">Металлические корпуса для электрощитков</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="title_h2 products__bottom">
+                        <p class="text">Ознакомьтесь с более подробными характеристиками и нашей продукцией в нашем каталоге! В каталоге уже представлены типовые решения с описаниями</p>
+                        <button class="btn">Каталог продукции.pdf</button>
+                    </div>
+                </div>
+            </section>
+            <section class="products_grid">
+                <div class="container">
+                    <div class="title_h2">
+                        <p class="h2">Наши изделия</p>
+                    </div>
+                    <div class="products_grid__box">
+                        <a href="#" class="products_grid__block">
+                            <img src="img/img1.png" alt="">
+                        </a>
+                        <a href="#"  class="products_grid__block">
+                            <img src="img/img2.png" alt="">
+                        </a>
+                        <a href="#"  class="products_grid__block">
+                            <img src="img/img3.png" alt="">
+                        </a>
+                        <a href="#"  class="products_grid__block">
+                            <img src="img/img4.png" alt="">
+                        </a>
+                        <a href="#"  class="products_grid__block">
+                            <img src="img/img5.png" alt="">
+                        </a>
+                        <a href="#"  class="products_grid__block">
+                            <img src="img/img6.png" alt="">
+                        </a>
+                        <a href="#"  class="products_grid__block">
+                            <img src="img/img7.png" alt="">
+                        </a>
+                        <a href="#"  class="products_grid__block">
+                            <img src="img/img8.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages2">
+                <img src="img/advantages2-bottom.png" alt="" class="advantages2__img">
+                <div class="lines">
+                    <span class="lines1"></span>
+                    <span class="lines6"></span>
+                    <div class="lines_container">
+                        <span class="lines2"></span>
+                        <span class="lines3"></span>
+                        <span class="lines4"></span>
+                        <span class="lines5"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="title_h2">
+                        <p class="h2">Преимущества изделий</p>
+                    </div>
+                    <div class="advantages2__box">
+                        <div class="advantages2__block">
+                            <p class="num">01</p>
+                            <p class="text">Знак электробезопасности установлен на каждом ВРУ. Знак изготовлен из пластика и устанавливается на заклепках. Долговечен и устойчив к агрессивной среде.</p>
+                        </div>
+                        <div class="advantages2__block">
+                            <p class="num">02</p>
+                            <p class="text">Профессиональная маркировка марки BREADY. Не выгорает на солнце, устойчива к стиранию. Не отклеивается.</p>
+                        </div>
+                        <div class="advantages2__block">
+                            <p class="num">03</p>
+                            <p class="text">Окраска производится качественной полимерной краской разных цветов классификации RAL</p>
+                        </div>
+                        <div class="advantages2__block">
+                            <p class="num">04</p>
+                            <p class="text">Сборка по конструкторской документации минимизирует ошибки и увеличивает скорость сборки.</p>
+                        </div>
+                        <div class="advantages2__block">
+                            <p class="num">05</p>
+                            <p class="text">Бесключевой доступ позволяет снять дверь ВРУ без инструментов.</p>
+                        </div>
+                        <div class="advantages2__block">
+                            <p class="num">06</p>
+                            <p class="text">Керамический изолятор нулевой шины. Повышает надежность и долговечность в эксплуатации</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="certificates">
+                <div class="container">
+                    <div class="title_h2">
+                        <p class="h2">Сертификаты</p>
+                    </div>
+                    <div class="certificates__slider">
+                        <div class="certificates__wrap">
+                            <div class="certificates__block">
+                                <img src="img/doc1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="certificates__wrap">
+                            <div class="certificates__block">
+                                <img src="img/doc2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="certificates__wrap">
+                            <div class="certificates__block">
+                                <img src="img/doc3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="certificates__wrap">
+                            <div class="certificates__block">
+                                <img src="img/doc2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages2 form">
+                <div class="form_bg">
+                    <img src="img/form-bg.png" alt="">
+                </div>
+                <div class="lines">
+                    <span class="lines1"></span>
+                    <span class="lines6"></span>
+                    <div class="lines_container">
+                        <span class="lines2"></span>
+                        <span class="lines3"></span>
+                        <span class="lines4"></span>
+                        <span class="lines5"></span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="title_h2">
+                        <p class="h2">Как получить Коммерческое предложение</p>
+                    </div>
+                    <div class="advantages2__top">
+                        <div class="block">
+                            <p class="text">Сделаем расчёт изготовления вводно-распределительного устройства</p>
+                        </div>
+                        <div class="block">
+                            <p class="text">Действует скидка 10% на изготовление ВРУ по промокоду «ОСЕНЬ22ВРУ»</p>
+                        </div>
+                        <div class="block">
+                            <p class="text">Укажите его в комментариях и мы подготовим расчёт для Вас уже со скидкой</p>
+                        </div>
+                    </div>
+                    <div class="advantages2__box">
+                        <div class="advantages2__block">
+                            <p class="num">ШАГ 1</p>
+                            <p class="text">Оставьте простую заявку, указав необходимые для Вас параметры. С Вами свяжется наш менеджер в течение 2-3 дней</p>
+                        </div>
+                        <div class="advantages2__block">
+                            <p class="num">ШАГ 2</p>
+                            <p class="text">Мы свяжемся с Вами и озвучим сроки изготовления. Также если необходимы уточнения, наш специалист свяжется с Вами. </p>
+                        </div>
+                        <div class="advantages2__block">
+                            <p class="num">ШАГ 3</p>
+                            <p class="text">Мы заключаем договор, производится оплата и приступаем к изготовлению. Также мы осуществляем доставку. 
+                                <span>* Для постоянных клиентов имеются отсрочки.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages2__form">
+                        <div class="box">
+                            <div class="block">
+                                <div class="input_wrap">
+                                    <p class="h6">ФИО*</p>
+                                    <input class="input" type="text" placeholder="Александр">
+                                </div>
+                                <div class="input_wrap">
+                                    <p class="h6">Телефон*</p>
+                                    <input class="input" type="text" placeholder="+7_XXX_XXX_XX_XX">
+                                </div>
+                                <div class="input_wrap">
+                                    <p class="h6">E-Mail*</p>
+                                    <input class="input" type="text" placeholder="mail@mail.ru">
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="input_wrap">
+                                    <p class="h6">Климатическое исполнение</p>
+                                    <div class="radio_box">
+                                        <div class="radio">
+                                            <input type="radio" id="1" name="radio">
+                                            <label for="1">
+                                                <span></span>
+                                                IP31</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="2" name="radio">
+                                            <label for="2">
+                                                <span></span>
+                                                IP54</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input_wrap">
+                                    <p class="h6">Комплектация</p>
+                                    <textarea class="textarea" placeholder="Доброе время ..."></textarea>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="input_wrap">
+                                    <p class="h6">Размер корпуса</p>
+                                    <input class="input" type="text" placeholder="mail@mail.ru">
+                                </div>
+                                <div class="input_wrap">
+                                    <p class="h6">Комплектация</p>
+                                    <textarea class="textarea" placeholder="Комплектация"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="header__box">
+                    <a href="/" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__block">
+                        <a href="tel:+7 (383) 325 32 32" class="header__phone">+7 (383) 325 32 32</a>
+                    </div>
+                    <div class="header__block">
+                        <p class="header__address">г. Новосибирск, ул. Тюменская, д. 8, офис 3</p>
+                    </div>
+                    <div class="header__block">
+                        <a href="mailto:info@nku-nsk.ru" class="header__email">info@nku-nsk.ru</a>
+                    </div>
+                    <div class="header__block">
+                        <div class="header__soc">
+                            <a href="#" class="item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                    <path d="M4.99036 15.6693L5.67816 16.0711C6.83805 16.7476 8.15727 17.1027 9.50001 17.1C11.0031 17.1 12.4725 16.6543 13.7223 15.8192C14.9721 14.9841 15.9463 13.7971 16.5215 12.4084C17.0967 11.0197 17.2472 9.49156 16.954 8.01731C16.6607 6.54305 15.9369 5.18886 14.874 4.12599C13.8111 3.06311 12.4569 2.33928 10.9827 2.04603C9.50844 1.75278 7.98033 1.90329 6.59161 2.47851C5.2029 3.05374 4.01594 4.02785 3.18084 5.27766C2.34574 6.52748 1.90001 7.99686 1.90001 9.49999C1.90001 10.8642 2.25816 12.1723 2.92981 13.3228L3.33071 14.0106L2.71036 16.2915L4.99036 15.6693ZM0.00381271 19L1.28821 14.2804C0.441893 12.8296 -0.0027461 11.1796 1.27606e-05 9.49999C1.27606e-05 4.25315 4.25316 0 9.50001 0C14.7469 0 19 4.25315 19 9.49999C19 14.7468 14.7469 19 9.50001 19C7.82115 19.0027 6.17183 18.5584 4.72151 17.7127L0.00381271 19ZM6.07146 5.0426C6.19876 5.0331 6.32701 5.0331 6.45431 5.0388C6.50561 5.0426 6.55691 5.0483 6.60821 5.054C6.75926 5.0711 6.92551 5.16325 6.98156 5.29055C7.26466 5.93275 7.54016 6.5797 7.80616 7.22855C7.86506 7.37295 7.82991 7.5582 7.71781 7.7387C7.64071 7.86075 7.55732 7.97871 7.46796 8.09209C7.36061 8.22984 7.12976 8.48254 7.12976 8.48254C7.12976 8.48254 7.03571 8.59464 7.07181 8.73429C7.08511 8.78749 7.12881 8.86444 7.16871 8.92904L7.22476 9.01929C7.46796 9.42494 7.79476 9.83629 8.19376 10.2239C8.30776 10.3341 8.41891 10.4471 8.53861 10.5526C8.98321 10.9449 9.48671 11.2651 10.0301 11.5026L10.0349 11.5045C10.1156 11.5396 10.1565 11.5586 10.2743 11.609C10.3332 11.6337 10.394 11.6555 10.4557 11.6717C10.5195 11.6879 10.5867 11.6849 10.6488 11.6629C10.7109 11.6409 10.765 11.601 10.8044 11.5482C11.4922 10.715 11.5549 10.6609 11.5606 10.6609V10.6628C11.6083 10.6182 11.6651 10.5844 11.727 10.5636C11.789 10.5428 11.8547 10.5355 11.9197 10.5421C11.9767 10.5459 12.0346 10.5564 12.0878 10.5801C12.5923 10.811 13.4178 11.171 13.4178 11.171L13.9707 11.419C14.0638 11.4636 14.1484 11.5691 14.1512 11.6707C14.155 11.7344 14.1607 11.837 14.1389 12.0251C14.1085 12.2711 14.0344 12.5666 13.9603 12.7214C13.9095 12.8271 13.8422 12.924 13.7608 13.0083C13.6649 13.109 13.5599 13.2006 13.4473 13.2819C13.4083 13.3113 13.3687 13.3398 13.3285 13.3674C13.2103 13.4424 13.0889 13.5121 12.9647 13.5764C12.7201 13.7064 12.4499 13.781 12.1733 13.7949C11.9976 13.8044 11.8218 13.8177 11.6451 13.8082C11.6375 13.8082 11.1055 13.7256 11.1055 13.7256C9.75485 13.3703 8.50573 12.7048 7.45751 11.7819C7.24281 11.5928 7.04426 11.3895 6.84096 11.1872C5.99546 10.3464 5.35706 9.43919 4.96946 8.58229C4.77107 8.16172 4.66391 7.70393 4.65501 7.239C4.65109 6.6622 4.83964 6.10058 5.19081 5.643C5.26016 5.5537 5.32571 5.4606 5.43876 5.35325C5.55941 5.23925 5.63541 5.17845 5.71806 5.13665C5.82795 5.08158 5.94783 5.04926 6.07051 5.04165L6.07146 5.0426Z" fill="#2B65A8"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="box">
+                    <div class="div">
+                        <button class="footer__call">Заказать звонок</button>
+                    </div>
+                    <div class="footer__copy">
+                        <a href="#" class="link">Политика конфидециальности</a>
+                        <p class="copy">©2022 nku-nsk.ru</p>
+                    </div>
+                    <div class="footer__center">
+                        <p class="text"><a href="mailto:info@nku-nsk.ru">info@nku-nsk.ru</a>  — электронная почта для обращений с вопросом о своих персональных данных, в том числе об их удалении</p>
+                    </div>
+                    <div class="footer__right">
+                        <div>
+                            <a href="#" class="link">Создание сайтов</a>
+                            <a href="#" class="link">Продвижение сайтов</a>
+                        </div>
+                        <img src="img/kontur.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $('.certificates__slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true
+        });
+        
+    </script>
+</body>
+</html>
