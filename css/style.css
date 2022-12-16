@@ -1395,6 +1395,11 @@ ul, ol {
   display: none;
 }
 
+@media screen and (max-width: 1650px) {
+  .banner__img {
+    width: 900px;
+  }
+}
 @media screen and (max-width: 768px) {
   .header__burgir {
     display: -webkit-box;
@@ -2124,5 +2129,23 @@ ul, ol {
     -ms-grid-row: 11;
     -ms-grid-row-span: 4;
     grid-row: 11/15;
+  }
+  .certificates {
+    display: block;
+    padding-bottom: 60px;
+  }
+  .certificates .title_h2 {
+    padding-top: 44px;
+    padding-bottom: 28px;
+  }
+  .certificates__block {
+    width: 223px;
+    height: 318px;
+  }
+  .certificates .slick-prev {
+    left: -1px;
+  }
+  .certificates .slick-next {
+    right: -1px;
   }
 }
